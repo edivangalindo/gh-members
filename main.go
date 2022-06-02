@@ -25,7 +25,7 @@ func main() {
 	stat, _ := os.Stdin.Stat()
 
 	if (stat.Mode() & os.ModeCharDevice) != 0 {
-		fmt.Fprintln(os.Stderr, "No repos detected. Hint: cat repos.txt | gh-readmes")
+		fmt.Fprintln(os.Stderr, "No orgs detected. Hint: cat orgs.txt | gh-members")
 		os.Exit(1)
 	}
 
